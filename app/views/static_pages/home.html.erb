@@ -8,11 +8,10 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
-    <!-- <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
+    <link href="/assets/bootstrap.css" media: "all" rel="stylesheet">
+    <link href="/assets/bootstrap-responsive.css" rel="stylesheet">
     <style>
 
     /* GLOBAL STYLES
@@ -65,7 +64,7 @@
     }
 
     .masthead {
-      padding: 10px 0px 25px 0px;
+      padding: 40px 0px 25px 0px;
     }
 
     .jumbotron {
@@ -102,8 +101,6 @@
 
   <body>
 
-    <!-- NAVBAR
-    ================================================== -->
     <div class="masthead">
       <div class ="container">
         <form class="navbar-form pull-right" method="link" action="carlosfierro.html">
@@ -116,7 +113,8 @@
     </div>
 
     <hr>
-    <div class="container">
+
+    <div class="container center">
       <div class="jumbotron">
           <h1>Welcome to Around the Corner</h1>
           <img src="assets/logo_iphone.png" alt="logo", width="220" height="220">
@@ -125,30 +123,33 @@
           <a href="/signup" class="btn btn-primary">Sign up now!</a>
       </div>
     </div>
+
     <hr>
 
     <div class="container center">
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="span4">
-        <%= image_tag("deal_list.png", alt:"Rails") %>
+        <img src="assets/deal_list.png" alt="Rails", width="350" height="350">
           <h2>Offers & Deals</h2>
           <p>Keep and attract new customers with personalized and targeted offers.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
-          <%= image_tag("map.png", alt:"Rails") %>
+          <img src="assets/map.png" alt="Rails", width="350" height="350">
           <h2>Be Discovered</h2>
           <p>Users will be notified of your business when Around the Corner.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
-          <%= image_tag("specific_deal.png", alt:"Rails") %>
+          <img src="assets/specific_deal.png" alt="Rails", width="350" height="350">
           <h2>Keep Them in the Loop</h2>
           <p>Easily send updates, event invitations, news and reviews to your customers.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
+
+      <hr>
 
       <!-- FOOTER -->
       <footer>
