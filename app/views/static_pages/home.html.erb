@@ -23,61 +23,21 @@
       color: #5a5a5a;
     }
 
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-      margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    }
-    .navbar-wrapper .navbar {
-
-    }
-
-    /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }
-
-    /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
-
-    /* Navbar links: increase padding for taller navbar */
-    .navbar .nav > li > a {
-      padding: 15px 20px;
-    }
-
-    /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar {
-      margin-top: 10px;
-    }
-
     .masthead {
-      padding: 40px 0px 25px 0px;
+      padding: 15px 0px 0px 0px;
     }
 
     .jumbotron {
-        margin: 60px 0;
+        margin: 30px 0;
         text-align: center;
       }
     .jumbotron h1 {
-      font-size: 40px;
+      font-size: 36px;
       line-height: 1;
     }
     .jumbotron .btn {
       font-size: 21px;
-      padding: 14px 24px;
+      padding: 10px 24px;
     }
 
     .center {
@@ -103,12 +63,12 @@
 
     <div class="masthead">
       <div class ="container">
-        <form class="navbar-form pull-right" method="link" action="carlosfierro.html">
+        <form class="navbar-form pull-right" method="link" action="/signin">
               <input type="text" placeholder="Email">
               <input type="password" placeholder="Password">
-              <button type="submit" class="btn">Log in</button>
+              <button type="submit" class="btn">Sign in</button>
         </form>
-        <h3><a href="#" style="color: #777777">Around the Corner</a></h3>
+        <h4><a href="/" style="color: #777777">Around the Corner</a></h4>
       </div>
     </div>
 
@@ -131,32 +91,31 @@
       <div class="row">
         <div class="span4">
         <img src="assets/deal_list.png" alt="Rails", width="350" height="350">
-          <h2>Offers & Deals</h2>
+          <h3>Offers & Deals</h3>
           <p>Keep and attract new customers with personalized and targeted offers.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img src="assets/map.png" alt="Rails", width="350" height="350">
-          <h2>Be Discovered</h2>
+          <h3>Be Discovered</h3>
           <p>Users will be notified of your business when Around the Corner.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img src="assets/specific_deal.png" alt="Rails", width="350" height="350">
-          <h2>Keep Them in the Loop</h2>
+          <h3>Keep Them in the Loop</h3>
           <p>Easily send updates, event invitations, news and reviews to your customers.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-      </div><!-- /.row -->
+        </div>
+      </div>
 
       <hr>
 
-      <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Company, Inc. &middot; <%= link_to "About", about_path %> &middot; <%= link_to "Contact", contact_path %></p>
+        <p>&copy; 2013 Company, Inc. &middot; <%= link_to "About Us", about_path %> &middot; <%= link_to "Contact", contact_path %></p>
       </footer>
-    </div><!-- /.container -->
+    </div>
 
 
 
